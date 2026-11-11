@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Student</title>
+    
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/add_student.css' %}">
+</head>
+<body>
+    <h3>Student Info</h3>
+    <form action=""method="post">
+        {% csrf_token %}
+        <label for="id">ID:</label>
+        <input type="text"name="id"><br><br>
+        <label for="name">NAME:</label>
+        <input type="text"name="name"><br><br>
+        <label for="dept">DEPT:</label>
+        <input type="text"name="dept"><br><br>
+        <button type="submit">Submit</button>
+
+    </form>
+</body>
+</html>
